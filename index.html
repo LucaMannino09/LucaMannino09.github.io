@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="css/game.css">
-        <title>Get To School 5</title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            width: 70%;
+            background-color: aqua;
+            margin: auto;
+        }
+
+        .smallBoxes {
+            width: 40%;
+            background-color: brown;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .bigBox {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .smallBoxes img {
+            width: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 style="text-align: center;">My Website</h1>
+        <div class="bigBox">
+
+            <div class="smallBoxes">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni quisquam officiis omnis officia.
+                    Error dolores numquam repellat voluptatibus est porro, totam, culpa autem necessitatibus non fugit,
+                    quas et nihil!</p>
+            </div>
+            <div class="smallBoxes">
+                <h2>My Game</h2>
+                <p>Click <a href="game/index.html">Here</a> to play my game</p>
+            </div>
+        </div>
+        <div class="bigBox">
+
+            <div class="smallBoxes">
+                <h2>Good Spongebob</h2>
+                <img src="img/SpongeBob_SquarePants_character.svg.png" alt="" style="transform: scaleX(-1)">
+            </div>
+            <div class="smallBoxes">
+                <h2>Evil Spongebob</h2>
+                <img src="img/SpongeBob_SquarePants_character.svg.png" alt="" style="filter: invert(100%)">
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
