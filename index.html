@@ -4,92 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <style>
         body {
-            background-color: blue;
+            background-color: gray;
         }
 
         h1 {
             text-align: center;
+            text-shadow: 3px 2px 3px;
         }
 
         #content {
-            background-color: aqua;
             margin: auto;
-            width: 75%;
+            width: 70%;
+            background-color: rgb(157, 157, 211);
             padding: 10px;
             border-radius: 10px;
         }
 
-        #bigContainer {
-            background-color: rgb(128, 255, 255);
+        #bigBox {
+            background-color: aqua;
+            padding: 5px;
             display: flex;
             justify-content: space-evenly;
-            padding: 10px;
             border-radius: 10px;
         }
 
-        #smallContainer {
-            width: 40%;
+        #sideBox {
+            width: 70%;
         }
 
         .smallBox {
-            background-color: white;
+            background-color: yellowgreen;
+            padding: 5px;
             margin: 10px;
-            padding: 4px;
+            box-shadow: 3px 3px 3px;
+            border-radius: 10px;
         }
 
-        .bigBox {
-            background-color: rgb(255, 255, 255);
-            margin: 10px;
-            width: 40%;
-            padding: 4px;
-        }
-
-        .allBoxes {
-            border: 1px solid black;
-            box-shadow: 5px 5px 1px black;
+        #listBox {
+            background-color: rgb(255, 193, 193);
+            padding: 10px;
+            margin: 5px;
+            width: 30%;
+            box-shadow: 3px 3px 3px;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
     <div id="content">
-        <h1>Header</h1>
-        <div id="bigContainer">
-            <div id="smallContainer">
-                <div class="smallBox allBoxes">
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam voluptatem ratione ipsam
-                        expedita labore delectus ab culpa, impedit id adipisci pariatur fugiat facilis nulla neque dolor
-                        excepturi! Fuga, quidem.</p>
+        <h1>Home Page</h1>
+        <div id="bigBox">
+            <div id="sideBox">
+                <div class="smallBox">
+                    <h2>What is this site?</h2>
+                    <p>This is a site made for my I.T. class for my HTML final. The goal of this final project is to
+                        prove that we, the students, are capable of creating our own website without any help from our
+                        teacher. In my opinion, I felt that this was a fairly simple and easy project, since we have
+                        learned quite a lot about HTML this school year, and VS Code also has helped us save lots of
+                        time.</p>
                 </div>
-                <div class="smallBox allBoxes">
-                    <h2>Game</h2>
-                    <p>Click <a href="game/index.html">Here</a> to play</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Images</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi animi sit et minus
-                        aperiam. Porro, alias! Aliquid dolorum, ex animi, porro, cumque ea inventore quod vero
-                        blanditiis sequi quas.</p>
+                <div class="smallBox">
+                    <h2>Why is this site special?</h2>
+                    <p>Why is this site in particular special? Well, I feel that it does a good job of showing almost
+                        everything that we have learned this year. Now, obviously this is still a very basic website
+                        with limited CSS, but it still shows a lot. For one, it shows off how we learned about using
+                        divs to make boxes inside of different boxes. Also, there are links on the right side, which is
+                        using the anchor tag.</p>
                 </div>
             </div>
-            <div class="bigBox allBoxes">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et, amet atque nulla nisi ad,
-                    quis rerum, nostrum omnis architecto deleniti accusamus quod ut minus tenetur soluta id tempore
-                    fuga.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquam odit atque doloribus maxime
-                    nesciunt, ea a, odio similique blanditiis laborum velit dolorum ducimus illo magnam placeat eos.
-                    Blanditiis, eum.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae odit perspiciatis. Velit,
-                    et? Quam soluta consequuntur atque laborum dolorem. Vel qui, corrupti consequatur ducimus blanditiis
-                    quasi mollitia quis architecto?</p>
+            <div id="listBox">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="/about/about.html">About Page</a></li>
+                    <p>Come visit my about page! This page tells you about who I am and what I like to do outside of
+                        computers.</p>
+                    <li><a href="/game/index.html">My Game</a></li>
+                    <p>Please come and try my game, I have spent a lot of time creating this game. However, it is still
+                        not complete, but you can still do a lot of things while you are waiting for any updates.</p>
+                </ul>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
